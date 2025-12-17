@@ -1,1 +1,416 @@
-index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Academy by ZustPe — Professional Training with 100% Placement Assistance</title>
+
+  <!-- SEO Essentials -->
+  <meta name="description" content="Academy by ZustPe offers professional training in Full Stack, DevOps, Software Testing, Data Analyst, Cyber Security, UI/UX, and Soft Skills with 100% placement assistance or your money-back guarantee." />
+  <meta name="keywords" content="ZustPe Academy, training and placement, full stack course, devops training, software testing, data analyst, cyber security course, UI UX design, soft skills training" />
+  <meta name="author" content="ZustPe Technologies Private Limited" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Academy by ZustPe — First step to success" />
+  <meta property="og:description" content="Master the skills that matter in tech, with 100% placement assistance or your money back." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://academy.zustpe.com/" />
+  <meta property="og:image" content="https://academy.zustpe.com/assets/badge-refund.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Academy by ZustPe — First step to success" />
+  <meta name="twitter:description" content="Professional training + 100% placement assistance or full refund." />
+  <meta name="twitter:image" content="https://academy.zustpe.com/assets/badge-refund.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Academy by ZustPe",
+    "url": "https://academy.zustpe.com/",
+    "logo": "https://academy.zustpe.com/assets/logo-shield-a.svg",
+    "sameAs": ["https://www.linkedin.com/company/zustpe"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Flat A, Plot 94B, 6th Main Road, Ram Nagar North Extension, Velachery",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600042",
+      "addressCountry": "IN"
+    },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "info@zustpe.com",
+      "telephone": "+91-XXXXXXXXXX",
+      "areaServed": "IN",
+      "availableLanguage": ["en", "ta"]
+    }]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What if I don't get placed in 30 days after successful completion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You'll get a 100% refund, subject to the T&Cs for the Training & Placement program."
+      }
+    }]
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    :root{
+      --maroon:#7A1F1F; --saffron:#E5A521; --green:#0FA36B; --gold:#C9A227;
+      --bg:#FFF9F0; --card:#FFFFFF; --muted:#6A7280; --text:#1A1A1A; --light:#F8F6F2;
+      --shadow:0 10px 28px rgba(122,31,31,0.18); --radius:16px;
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+    /* Header */
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eadfcf;z-index:100}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand svg{height:38px;width:auto}
+    .nav-links{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:100px;border:1px solid transparent;font-weight:600;cursor:pointer}
+    .btn-primary{background:var(--green);color:#fff}
+    .btn-secondary{background:#fff;color:var(--maroon);border-color:#d9c9a2}
+
+    /* Hero */
+    .hero{padding:64px 0;background:linear-gradient(180deg,#fff,var(--light))}
+    .hero .wrap{display:grid;grid-template-columns:1.15fr 0.85fr;gap:36px;align-items:center}
+    h1{font-weight:800;font-size:42px;line-height:1.15;color:var(--maroon);margin:0 0 16px}
+    .sub{font-size:18px;color:var(--muted);margin-bottom:24px}
+    .cta-group{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-visual{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:#faf4e4;border:2px solid var(--gold);height:320px;display:flex;align-items:center;justify-content:center;position:relative}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #eadfcf;color:var(--maroon);padding:10px 12px;border-radius:10px;margin-top:16px;font-weight:600;text-align:center}
+
+    /* Sections */
+    section{padding:56px 0}
+    .section-title{font-weight:800;font-size:28px;color:var(--maroon);margin-bottom:24px;text-align:center}
+
+    /* Courses */
+    .cards{display:grid;grid-template-columns:repeat(7,1fr);gap:16px;justify-items:center}
+    .card{background:var(--card);border:1px solid #eadfcf;border-radius:var(--radius);padding:18px;text-align:center;transition:.2s ease;width:100%;max-width:180px}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--green)}
+    .card-icon{height:48px;width:48px;margin:0 auto 10px}
+    .card-title{font-weight:700;color:var(--maroon);font-size:15px}
+
+    /* How it works */
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{background:var(--card);border:1px solid #eadfcf;border-radius:var(--radius);padding:18px;text-align:center}
+    .step h4{margin:0 0 8px;color:var(--maroon);font-weight:800}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+    .shield-note{display:flex;align-items:center;gap:10px;margin-top:8px;color:var(--maroon);font-weight:700;justify-content:center}
+
+    /* Testimonials */
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .testimonial{background:var(--card);border:1px solid #eadfcf;border-radius:var(--radius);padding:12px;text-align:center}
+    .testimonial iframe{width:100%;height:200px;border:0;border-radius:12px}
+
+    /* Footer */
+    footer{background:var(--maroon);color:#f3e7d2;padding:36px 24px;margin-top:32px}
+    .footer-grid{display:grid; grid-template-columns:2fr 1fr 1fr 1fr;gap:18px}
+    .footer-title{font-weight:800;color:#fff;margin-bottom:10px }
+    .small{font-size:13px}
+    .footer-grid ul{margin: 0; padding: 0;}
+    .footer-grid li{list-style: none; margin-bottom: 8px;}
+    .list{ margin-right: 20px;}
+
+    /* Modal */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:none;align-items:center;justify-content:center;padding:20px;z-index:200}
+    .modal-dialog{background:#fff;border-radius:16px;max-width:760px;width:100%;padding:0;overflow:hidden;border:3px solid var(--gold);box-shadow:var(--shadow)}
+    .modal-header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:var(--maroon);color:#fff}
+    .modal-body{padding:0;background:#faf7ee}
+    .modal-body iframe{width:100%;height:70vh;border:0}
+    .close{background:transparent;border:0;color:#fff;font-size:20px;cursor:pointer}
+
+    /* Responsive Fixes */
+    @media (max-width:1200px){.cards{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:900px){
+      .nav{flex-direction:column;gap:12px}
+      .nav-links{justify-content:center;gap:14px}
+      .hero .wrap{grid-template-columns:1fr;text-align:center}
+      .cta-group{justify-content:center}
+      .hero-visual{height:260px}
+      .steps{grid-template-columns:repeat(2,1fr)}
+      .testimonials{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:800px){.cards{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:500px){
+      h1{font-size:28px}
+      .sub{font-size:16px}
+      .steps{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr;text-align:center}
+      .cards{grid-template-columns:1fr}
+    }
+    @media (max-width:600px){.modal-body iframe{height:85vh}}
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <!-- <svg viewBox="0 0 110 130" xmlns="http://www.w3.org/2000/svg" aria-label="Academy by ZustPe logo">
+        <path d="M55 4 L97 20 L102 90 L55 120 L8 90 L13 20 Z" fill="#7A1F1F" stroke="#C9A227" stroke-width="3"/>
+        <path d="M55 12 L90 25 L94 82 L55 105 L16 82 L20 25 Z" fill="#E5A521"/>
+        <text x="55" y="65" font-size="50" font-weight="800" fill="#7A1F1F" text-anchor="middle">அ</text>
+        <path d="M58 40 C70 48, 72 58, 65 70" stroke="#0FA36B" stroke-width="5" fill="none"/>
+        <polygon points="71,55 63,59 70,64" fill="#0FA36B"/>
+      </svg> -->
+      <img src="/picture/Academy by ZustPe Logo.png" alt="" height="50px" width="50px">
+
+      <strong>Academy by ZustPe</strong>
+    </div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="btn btn-primary" onclick="openEnroll()">Enroll Now</button>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<main id="home" class="hero">
+  <div class="container wrap">
+    <div>
+      <h1>Accelerate Your Career with Professional Training & Placement Support</h1>
+      <p class="sub">Master the skills that matter in tech, with <strong>100% placement assistance</strong> or your money back!</p>
+      <div class="cta-group">
+        <button class="btn btn-primary" onclick="openEnroll()">Enroll Now</button>
+        <!-- <a href="" class="btn btn-secondary">Book a Free Consultation</a> -->
+        <button class="btn btn-secondary" onclick="openEnroll()">Book a Free Consultation</button>
+      </div>
+      <div class="badge">🛡️ <strong>100% Refund Assured</strong> • 30-Day Placement Guarantee</div>
+    </div>
+    <div class="hero-visual" aria-label="Shield representing refund assurance and success">
+      <!-- <svg viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg" role="img">
+        <path d="M110 8 L190 36 L200 180 L110 240 L20 180 L30 36 Z" fill="#7A1F1F" stroke="#C9A227" stroke-width="6"/>
+        <path d="M110 20 L180 46 L186 170 L110 222 L34 170 L40 46 Z" fill="#E5A521"/>
+        <text x="110" y="120" font-size="110" font-weight="800" fill="#7A1F1F" text-anchor="middle">அ</text>
+        <path d="M118 76 C148 96, 152 120, 132 154" stroke="#0FA36B" stroke-width="9" fill="none"/>
+        <polygon points="152,110 132,118 148,128" fill="#0FA36B"/>
+        <text x="110" y="175" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">100% REFUND ASSURED</text>
+        <text x="110" y="197" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">ACADEMY</text>
+        <text x="110" y="218" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">by ZustPe</text>
+      </svg> -->
+
+      <img src="/picture/Designer(5).png" alt="" height="320px">
+    </div>
+  </div>
+</main>
+
+<!-- Courses -->
+<section id="courses">
+  <div class="container">
+    <h2 class="section-title">Choose Your Path</h2>
+    <div class="cards" role="list">
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 48 48">
+          <rect x="6" y="8" width="36" height="24" rx="4" fill="#EAF7F2" stroke="#0FA36B"/>
+          <path d="M14 20 l4 -4 l-4 -4 M34 12 l-4 4 l4 4" stroke="#0FA36B" stroke-width="2" fill="none"/>
+          <rect x="16" y="34" width="16" height="4" rx="2" fill="#0FA36B"/>
+        </svg>
+        <div class="card-title">Full Stack Development</div>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 48 48">
+          <path d="M12 24c0-6 5-11 11-11h2c6 0 11 5 11 11s-5 11-11 11h-2c-6 0-11-5-11-11z" fill="#EAF7F2" stroke="#0FA36B"/>
+          <path d="M17 24l5-3M31 24l-5 3" stroke="#0FA36B" stroke-width="2"/>
+          <circle cx="24" cy="24" r="3" fill="#0FA36B"/>
+        </svg>
+        <div class="card-title">DevOps</div>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 48 48">
+          <path d="M8 16h32v16H8z" fill="#EAF7F2" stroke="#0FA36B"/>
+          <path d="M18 22h12M20 26h8" stroke="#0FA36B" stroke-width="2"/>
+          <path d="M24 10l6 6h-12z" fill="#0FA36B"/>
+        </svg>
+        <div class="card-title">Software Training</div>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 48 48">
+          <rect x="10" y="24" width="6" height="12" fill="#0FA36B"/>
+          <rect x="20" y="18" width="6" height="18" fill="#0FA36B"/>
+          <rect x="30" y="14" width="6" height="22" fill="#0FA36B"/>
+          <circle cx="35" cy="13" r="3" fill="#EAF7F2" stroke="#0FA36B"/>
+        </svg>
+        <div class="card-title">Data Analyst</div>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 48 48">
+          <path d="M12 20h24v16H12z" fill="#EAF7F2" stroke="#0FA36B"/>
+          <path d="M18 20v-4a6 6 0 0112 0v4" stroke="#0FA36B" stroke-width="2"/>
+          <circle cx="24" cy="28" r="2" fill="#0FA36B"/>
+        </svg>
+        <div class="card-title">Cyber Security</div>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 48 48">
+          <circle cx="24" cy="16" r="6" fill="#EAF7F2" stroke="#0FA36B"/>
+          <path d="M12 40c0-6 24-6 24 0v-12H12v12z" fill="#0FA36B"/>
+        </svg>
+        <div class="card-title">UI/UX Design</div>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 48 48">
+          <path d="M12 14h24v20H12z" fill="#EAF7F2" stroke="#0FA36B"/>
+          <path d="M16 20h16M16 26h16M16 32h12" stroke="#0FA36B" stroke-width="2"/>
+        </svg>
+        <div class="card-title">Soft Skills</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h4>Step 1: Enroll</h4>
+        <p>Choose your course and secure your seat online instantly.</p>
+      </div>
+      <div class="step">
+        <h4>Step 2: Learn</h4>
+        <p>Attend interactive sessions with industry experts.</p>
+      </div>
+      <div class="step">
+        <h4>Step 3: Practice</h4>
+        <p>Work on real-time projects to gain hands-on experience.</p>
+      </div>
+      <div class="step">
+        <h4>Step 4: Get Placed</h4>
+        <p>Our 100% placement assistance ensures you land the right job.</p>
+        <div class="shield-note">🛡️ Refund assured if placement not secured</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Success Stories</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="Student Testimonial 1" allowfullscreen></iframe>
+      </div>
+      <div class="testimonial">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="Student Testimonial 2" allowfullscreen></iframe>
+      </div>
+      <div class="testimonial">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID3" title="Student Testimonial 3" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+  <div class="container footer-grid">
+    <div>
+      <h4 class="footer-title">Academy by ZustPe</h4>
+      <p>Flat A, Plot 94B, 6th Main Road,<br> Ram Nagar North Extension,<br> Velachery, Chennai – 600042</p>
+      <p class="small">© 2025 ZustPe Technologies Pvt. Ltd. All rights reserved.</p>
+    </div>
+    <div>
+      <h4 class="footer-title">Courses</h4>
+      <ul class="list">
+        <li><a href="#courses">Full Stack</a></li>
+        <li><a href="#courses">DevOps</a></li>
+        <li><a href="#courses">Software Training</a></li>
+        <li><a href="#courses">Data Analyst</a></li>
+        <li><a href="#courses">Cyber Security</a></li>
+        <li><a href="#courses">UI/UX Design</a></li>
+        <li><a href="#courses">Soft Skills</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-title">Support</h4>
+      <ul class="list">
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-title">Connect</h4>
+      <ul class="list">
+        <li><a href="https://www.linkedin.com/company/zustpe" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:info@zustpe.com">Email</a></li>
+        <li><a href="tel:+91XXXXXXXXXX">Phone</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="enrollModal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h3>Enroll Now</h3>
+      <button class="close" onclick="closeEnroll()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <iframe
+        title="Academy Enrollment Form"
+        src="https://forms.office.com/Pages/ResponsePage.aspx?id=Gl4k4s3xkkir4igu5FXyoHwaO3nBfmBPs8IUwl1PJg1UOEc4NVFKSThVVTI4MEg4NkEzMjQ1STVUWi4u&embed=true"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        marginwidth="0"
+        marginheight="0"
+        style="border:none; max-width:100%; max-height:100vh;"
+        allowfullscreen
+        webkitallowfullscreen
+        mozallowfullscreen>
+      </iframe>
+    
+      <p style="text-align:center; margin-top:10px;">
+        If the form does not load,
+        <a href="https://forms.office.com/r/FORMID"
+           target="_blank"
+           rel="noopener"
+           style="color:#0FA36B; font-weight:600;">
+           click here
+        </a>
+      </p>
+    </div>
+    
+</div>
+
+<!-- Scripts -->
+<script>
+  function openEnroll() {
+    document.getElementById('enrollModal').style.display = 'flex';
+  }
+  function closeEnroll() {
+    document.getElementById('enrollModal').style.display = 'none';
+  }
+  // Close modal on click outside
+  window.onclick = function(e) {
+    const modal = document.getElementById('enrollModal');
+    if (e.target === modal) modal.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
